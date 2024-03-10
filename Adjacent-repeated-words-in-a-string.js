@@ -43,3 +43,7 @@ function countAdjacentPairs(searchString) {
     currentWord === words[i + 1] && currentWord !== words[i - 1] ? 
       [...repeatedWords, currentWord] : repeatedWords, []).length;
 }
+
+// or
+
+const countAdjacentPairs=(s)=>(s.match(/(\b\w+\s*\b)\1+/gi)||[]).length
