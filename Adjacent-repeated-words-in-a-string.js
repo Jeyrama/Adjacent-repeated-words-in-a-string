@@ -21,3 +21,6 @@ Examples:
   "dog dog dog dog cat cat"  -->  2
   "cat cat dog dog cat cat"  -->  3
 */
+
+
+// Solution
