@@ -34,3 +34,12 @@ function countAdjacentPairs(s) {
     
     return c;
   }
+
+// or 
+
+function countAdjacentPairs(searchString) {
+  const words = searchString.toLowerCase().split(/\s+/);
+  return words.reduce((repeatedWords, currentWord, i) =>
+    currentWord === words[i + 1] && currentWord !== words[i - 1] ? 
+      [...repeatedWords, currentWord] : repeatedWords, []).length;
+}
