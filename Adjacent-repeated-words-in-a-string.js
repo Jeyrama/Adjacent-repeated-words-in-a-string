@@ -24,3 +24,13 @@ Examples:
 
 
 // Solution
+
+function countAdjacentPairs(s) {
+  let c=0;
+    s = s.toLowerCase().split(" ");
+    s.forEach( (w, index, s) => {
+      if(s[index] == s[index+1] && s[index+1] != s[index+2]) c++
+    });
+    
+    return c;
+  }
